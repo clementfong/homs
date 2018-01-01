@@ -10,7 +10,7 @@
       .panel-heading
         %h4.panel-title.collapsable
           %a(data-toggle='collapse' data-target='#order_data' hrev='#')
-            = "t('.order_data')"
+            = t('.order_data')
           .btn-group.order_data_group.pull-right
             = link_to('', edit_order_path(@order.code), class: 'fa fa-pencil pull-right', title: t('.edit_title'))
             - if use_imprint?
