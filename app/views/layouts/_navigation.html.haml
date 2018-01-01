@@ -34,12 +34,12 @@
               = current_user.name
               %span.caret
             %ul.dropdown-menu{role: :menu}
-              - link_to_manual = Rails.application.config.app.fetch(:link_to_manual, '')
-              - if link_to_manual.present?
-                %li
-                  %a(href="#{link_to_manual}")
-                    %span.glyphicon.glyphicon-question-sign
-                    = t('.help')
+              / - link_to_manual = Rails.application.config.app.fetch(:link_to_manual, '')
+              / - if link_to_manual.present?
+              /   %li
+              /     %a(href="#{link_to_manual}")
+              /       %span.glyphicon.glyphicon-question-sign
+              /       = t('.help')
               %li
                 = link_to destroy_user_session_path, :method=>'delete' do
                   %span.glyphicon.glyphicon-log-out
